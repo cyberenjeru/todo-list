@@ -2,6 +2,7 @@ package com.cyberenjeru.todolist.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.Setter;
 import lombok.ToString;
 import org.hibernate.annotations.CreationTimestamp;
@@ -27,7 +28,7 @@ public class Task {
     private String description;
 
     @Column(nullable = false)
-    private Date deadLine;
+    private Date deadline;
 
     @CreationTimestamp
     @Column(name = "created_at", nullable = false, updatable = false, insertable = false)
