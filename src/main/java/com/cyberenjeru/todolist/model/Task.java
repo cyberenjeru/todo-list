@@ -8,6 +8,7 @@ import lombok.ToString;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
@@ -28,13 +29,13 @@ public class Task {
     private String description;
 
     @Column(nullable = false)
-    private Date deadline;
+    private LocalDateTime deadline;
 
     @CreationTimestamp
     @Column(name = "created_at", nullable = false, updatable = false, insertable = false)
-    private Date createdAt;
+    private LocalDateTime createdAt;
 
     @UpdateTimestamp
     @Column(name = "created_at")
-    private Date updateAt;
+    private LocalDateTime updateAt;
 }
