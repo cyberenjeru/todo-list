@@ -75,7 +75,7 @@ public class TaskController {
 
     @ApiOperation(value = "Deletando uma task")
     @ApiResponses(value ={
-            @ApiResponse(code = 201, message = "Task deletada"),
+            @ApiResponse(code = 204, message = "Task deletada"),
             @ApiResponse(code = 404, message = "Task não encontrada")
     })
     @DeleteMapping("/tasks/{id}")
