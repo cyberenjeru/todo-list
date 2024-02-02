@@ -12,6 +12,12 @@ Solucionado o "Whitelabel Error" ao tentar acessar o H2 console. O problema foi 
 Criado método na TaskService para criar as tasks e também método para listá-las.  
 Feito o create e read do CRUD.  
 
+## Dia 3
+Feito os métodos de update e delete do CRUD.
+
+## Dia 4
+Configurado o Swagger e feito os endpoints.
+
 ### Tarefas para o próximo dia
-[ ] Fazer o update.  
-[ ] Fazer o delete.  
+[ ] Resolver erro ao acessar o console do swagger  
+ 
